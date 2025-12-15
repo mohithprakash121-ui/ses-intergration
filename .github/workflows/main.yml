@@ -53,7 +53,7 @@ jobs:
         if: failure()
         run: |
           aws ses send-email \
-            --from 'bhuvanraj107123@gmail.com' \
-            --destination 'ToAddresses="cherry107123@gmail.com"' \
+            --from 'mohithprakash121@gmail.com' \
+            --destination 'ToAddresses="mohithprakash444@gmail.com"' \
             --message 'Subject={Data="❌ Build FAILED - ${{ github.repository }}"},Body={Text={Data="*ALERT:* Build for ${{ github.repository }} on branch `${{ github.ref_name}}` *FAILED!*\n\nCommit: `${{ github.sha}}`\n*Please review logs:* ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}}' \
             --region us-east-1
